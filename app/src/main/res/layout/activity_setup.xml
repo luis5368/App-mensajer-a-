@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetupActivity">
+    <include
+        android:id="@+id/toolbar_setup"
+        layout="@layout/toolbar_principal"></include>
+    <EditText
+        android:id="@+id/nombre_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textos"
+        android:layout_below="@+id/toolbar_setup"
+        android:padding="10dp"
+        android:hint="Ingrese su nombre"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <EditText
+        android:id="@+id/ciudad_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textos"
+        android:layout_below="@+id/nombre_setup"
+        android:padding="10dp"
+        android:hint="Ingrese su ciudad"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:id="@+id/municipio_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textos"
+        android:layout_below="@+id/ciudad_setup"
+        android:padding="10dp"
+        android:hint="Ingrese su municipio"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:id="@+id/edad_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textos"
+        android:layout_below="@+id/municipio_setup"
+        android:padding="10dp"
+        android:hint="Ingrese su Edad"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:id="@+id/genero_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textos"
+        android:layout_below="@+id/edad_setup"
+        android:padding="10dp"
+        android:hint="Ingrese su genero"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_setup"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:shapeAppearanceOverlay="@style/rouderImageView"
+        android:src="@drawable/logo1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/genero_setup"/>
+
+    <Button
+        android:id="@+id/boton_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botones"
+        android:layout_below="@+id/image_setup"
+        android:padding="10dp"
+        android:text="Guardar informacion"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
